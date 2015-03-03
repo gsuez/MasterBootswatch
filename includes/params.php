@@ -22,101 +22,44 @@
 
 	$doc = JFactory::getDocument();
 
-	$styles = $this->params->get('styles');
-
 	// Column widths
+	$leftcolgrid = ($this->countModules('left') == 0) ? 0 : $this->params->get('leftColumnWidth', 3);
+	$rightcolgrid = ($this->countModules('right') == 0) ? 0 : $this->params->get('rightColumnWidth', 3);
 
-	$leftcolgrid = $this->params->get('leftColumnWidth', 3);
+	// Add javascript files
 
-	$rightcolgrid= $this->params->get('rightColumnWidth', 3);
+	// Include all compiled plugins (below), or include individual files as needed
+	$doc->addScript('templates/' . $this->template . '/js/holder.js');
 
-	// add javascript files
-
-	// JavaScript plugins (requires jQuery) 
-
-	//$doc->addScript('templates/'.$this->template.'/js/bootstrap.min.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/jquery-2.1.1.min.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/jquery-noconflict.js');
-
-	// Include all compiled plugins (below), or include individual files as needed 
-
-	$doc->addScript('templates/'.$this->template.'/js/holder.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/dropdown.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/bootswatch.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/tooltip.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/popover.js');
-
-	//$doc->addScript('templates/'.$this->template.'/js/modal.js');
+	// $doc->addScript('templates/' . $this->template . '/js/dropdown.js');
+	// $doc->addScript('templates/' . $this->template . '/js/bootswatch.js');
+	// $doc->addScript('templates/' . $this->template . '/js/tooltip.js');
+	// $doc->addScript('templates/' . $this->template . '/js/popover.js');
+	// $doc->addScript('templates/' . $this->template . '/js/modal.js');
 
 	// Add Stylesheets
 
-	$doc->addStyleSheet('templates/'.$this->template.'/css/navbar.css');
+	$doc->addStyleSheet('templates/' . $this->template . '/css/navbar.css');
 
-	$doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
+	$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 
-	// Remove
-
+	// Disable mootools
 	unset($doc->_scripts[JURI::root(true) . '/media/system/js/mootools-more.js']);
-
 	unset($doc->_scripts[JURI::root(true) . '/media/system/js/mootools-core.js']);
-
-	unset($doc->_scripts[JURI::root(true) . '/media/system/js/core.js']);
-
 	unset($doc->_scripts[JURI::root(true) . '/media/system/js/modal.js']);
-
 	unset($doc->_scripts[JURI::root(true) . '/media/system/js/caption.js']);
 
-	unset($doc->_scripts[JURI::root(true) . '/media/jui/js/jquery.min.js']);
-
-	unset($doc->_scripts[JURI::root(true) . '/media/jui/js/jquery-noconflict.js']);
-
-	unset($doc->_scripts[JURI::root(true) . '/media/jui/js/bootstrap.min.js']);
-
-	unset($doc->_scripts[JURI::root(true) . '/media/jui/js/jquery-migrate.min.js']);
-
 	// Add bootswatch styles
+	$style = $this->params->get('style');
 
-		if ($styles==0) $doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.min.css');
-
-		//if ($styles==0) $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
-
-		if ($styles==1) $doc->addStyleSheet('templates/'.$this->template.'/css/cerulean/bootstrap.min.css');
-
-		if ($styles==2) $doc->addStyleSheet('templates/'.$this->template.'/css/cosmo/bootstrap.min.css');
-
-		if ($styles==3) $doc->addStyleSheet('templates/'.$this->template.'/css/cyborg/bootstrap.min.css');
-
-		if ($styles==4) $doc->addStyleSheet('templates/'.$this->template.'/css/darkly/bootstrap.min.css');
-
-		if ($styles==5) $doc->addStyleSheet('templates/'.$this->template.'/css/flatly/bootstrap.min.css');
-
-		if ($styles==6) $doc->addStyleSheet('templates/'.$this->template.'/css/journal/bootstrap.min.css');
-
-		if ($styles==7) $doc->addStyleSheet('templates/'.$this->template.'/css/lumen/bootstrap.min.css');
-
-		if ($styles==8) $doc->addStyleSheet('templates/'.$this->template.'/css/paper/bootstrap.min.css');
-
-		if ($styles==9) $doc->addStyleSheet('templates/'.$this->template.'/css/readable/bootstrap.min.css');
-
-		if ($styles==10) $doc->addStyleSheet('templates/'.$this->template.'/css/sandstone/bootstrap.min.css');
-
-		if ($styles==11) $doc->addStyleSheet('templates/'.$this->template.'/css/simplex/bootstrap.min.css');
-
-		if ($styles==12) $doc->addStyleSheet('templates/'.$this->template.'/css/slate/bootstrap.min.css');
-
-		if ($styles==13) $doc->addStyleSheet('templates/'.$this->template.'/css/spacelab/bootstrap.min.css');
-
-		if ($styles==14) $doc->addStyleSheet('templates/'.$this->template.'/css/superhero/bootstrap.min.css');
-
-		if ($styles==15) $doc->addStyleSheet('templates/'.$this->template.'/css/united/bootstrap.min.css');
-
-		if ($styles==16) $doc->addStyleSheet('templates/'.$this->template.'/css/yeti/bootstrap.min.css');
+	if (!empty($style))
+	{
+		$doc->addStyleSheet('templates/' . $this->template . '/css/' . $style . '/bootstrap.min.css');
+	}
+	else
+	{
+		$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
+	}
 
 	// Variables
 
@@ -128,7 +71,7 @@
 
 	$pageclass = $params->get('pageclass_sfx');
 
-	$tpath = $this->baseurl.'/templates/'.$this->template;
+	$tpath = $this->baseurl . '/templates/' . $this->template;
 
 	// Parameter
 
@@ -144,82 +87,18 @@
 
 	$this->setGenerator(null);
 
-	// force latest IE & chrome frame
+	// Force latest IE & chrome frame
 
 	$doc->setMetadata('x-ua-compatible', 'IE=edge,chrome=1');
 
 	// Add javascripts
-
-	if ($modernizr==1) $doc->addScript($tpath.'/js/modernizr-2.8.3.js');
-
-	// add stylesheets
-
-	if ($fontawesome==1) $doc->addStyleSheet($tpath.'/css/font-awesome.min.css');
-
-	// Load Bootstrap
-
-	$loadBootstrap = $this->params->get('loadBootstrap', 1);
-
-	// Load JQuery
-
-	$loadJquery = $this->params->get('loadJquery', 1);
-
-	
-
-	if ($loadJquery){
-
-		$removeJs = array('/jquery.min.js','/jquery.js','/jquery-noconflict.js','/jquery-migrate.min.js','/jquery-migrate.js','/tabs-state.js','/bootstrap.min.js','/bootstrap.js',);
-
-		$scripts = $doc->_scripts;
-
-		foreach ($removeJs as $removeScript){
-
-			foreach ($scripts as $script => $scriptdata){
-
-				
-
-				if (stristr($script, $removeScript)){
-
-					unset($scripts[$script]);
-
-				}
-
-
-
-			}
-
-
-
-		}
-
-
-
-		$doc->_scripts = $scripts;
-
+	if ($modernizr == 1)
+	{
+		$doc->addScript($tpath . '/js/modernizr-2.8.3.js');
 	}
 
-	if ($loadJquery==1) $doc->addScript($tpath.'/js/jquery-2.1.1.min.js');
-
-    if ($loadJquery==1) $doc->addScript($tpath.'/js/jquery-noconflict.js');
-
-    if ($loadJquery==1) $doc->addScript($tpath.'/js/jquery-migrate.min.js');
-
-    if ($loadBootstrap == 1) $doc->addScript($tpath.'/js/bootstrap.min.js');
-
-	?>
-
-<?php
-
- if ($this->countModules('left') == 0): ?>
-
-<?php  $leftcolgrid  = "0"; ?>
-
-<?php  endif; ?>
-
-<?php
-
- if ($this->countModules('right') == 0): ?>
-
-<?php  $rightcolgrid  = "0"; ?>
-
-<?php  endif; ?>
+	// Add stylesheets
+	if ($fontawesome == 1)
+	{
+		$doc->addStyleSheet($tpath . '/css/font-awesome.min.css');
+	}
