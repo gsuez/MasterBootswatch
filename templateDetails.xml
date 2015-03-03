@@ -8,7 +8,7 @@
 	<authorEmail>info@gsuez.cl</authorEmail>
 	<authorUrl>http://www.gsuez.cl</authorUrl>
 	<version>Stable 1.0</version>
-	<description><![CDATA[ 
+	<description><![CDATA[
 		<h1>Master Bootswatch for Joomla! 3.x</h1>
 		<p>Un template para trabajar desde 0 con todas las ventajas de Twitter Bootstrap V 3.3.x</p>
 		<p>¡17 estilos de Bootswatch.com!</p>
@@ -41,7 +41,7 @@
         <position>right</position>
         <position>content-top</position>
         <position>content-bottom</position>
-        <position>bottom</position>    
+        <position>bottom</position>
         <position>footer</position>
         <position>copy</position>
 		<position>debug</position>
@@ -61,28 +61,28 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</field>
-				<!-- SHOW FRONTPAGE-->	
+				<!-- SHOW FRONTPAGE-->
 				<field name="frontpageshow" type="radio" class="btn-group" default="1" label="Show FrontPage Articles" description="Show FrontPage Articles">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
 				<!-- MODERNIZR-->
-				<field name="modernizr" type="radio" default="0" 
-					label="Modernizr" 
+				<field name="modernizr" type="radio" default="0"
+					label="Modernizr"
 					description="Enable JavaScript modernizr.js in head">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
 				<!-- FONT-AWESOME -->
-				<field name="fontawesome" type="radio" default="0" 
-					label="Font Awesome" 
+				<field name="fontawesome" type="radio" default="0"
+					label="Font Awesome"
 					description="Enable Font Awesome for better icons in Bootstrap">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
 				<!-- PIE-->
-				<field name="pie" type="radio" default="0" 
-					label="PIE" 
+				<field name="pie" type="radio" default="0"
+					label="PIE"
 					description="Enable PIE (CSS3 for IE 9+8)">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -112,25 +112,25 @@
 			</fieldset>
 			<!-- BOOTSWATCH STYLES SELECTOR -->
 			<fieldset name="presets" label="Styles">
-				<field name="styles" type="list" default="0" label="Estilos CSS" description="Free themes from bootswatch.com">
-	<option value="0">Default</option>
-	<option value="1">cerulean</option>
-	<option value="2">cosmo</option>
-	<option value="3">cyborg</option>
-	<option value="4">darkly</option>
-	<option value="5">flatly</option>
-	<option value="6">journal</option>
-	<option value="7">lumen</option>
-	<option value="8">paper</option>
-	<option value="9">readable</option>
-	<option value="10">sandstone</option>
-	<option value="11">simplex</option>
-	<option value="12">slate</option>
-	<option value="13">spacelab</option>
-	<option value="14">superhero</option>
-	<option value="15">united</option>
-	<option value="16">yeti</option>
-				</field>	
+				<field name="style" type="list" default="0" label="Estilos CSS" description="Free themes from bootswatch.com">
+					<option value="">Default</option>
+					<option value="cerulean">cerulean</option>
+					<option value="cosmo">cosmo</option>
+					<option value="cyborg">cyborg</option>
+					<option value="darkly">darkly</option>
+					<option value="flatly">flatly</option>
+					<option value="journal">journal</option>
+					<option value="lumen">lumen</option>
+					<option value="paper">paper</option>
+					<option value="readable">readable</option>
+					<option value="sandstone">sandstone</option>
+					<option value="simplex">simplex</option>
+					<option value="slate">slate</option>
+					<option value="spacelab">spacelab</option>
+					<option value="superhero">superhero</option>
+					<option value="united">united</option>
+					<option value="yeti">yeti</option>
+				</field>
 			</fieldset>
 		</fields>
 	</config>
