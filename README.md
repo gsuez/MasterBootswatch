@@ -26,5 +26,6 @@ Bootstrap<br>
 Blank Template<br>
 Thomas Park and Bootswatch<br>
 Roberto Segura for minor tweaks<br>
+Waseem Sadiq for minor tweaks<br>
 Jordi Sorts, for the idea ;)
 
