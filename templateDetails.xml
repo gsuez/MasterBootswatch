@@ -87,21 +87,6 @@
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<field name="loadJquery" type="list" default="1"
-					label="Load jQuery"
-					description="Select Load jQuery">
-						<option value="0">Not Load</option>
-						<option value="1">Load Locally</option>
-					<!--<option value="2">Load from CDN</option>-->
-				</field>
-				<field name="loadBootstrap" type="list" default="1"
-					label="Load Bootstrap"
-					description="Select Load Bootstrap">
-						<option value="0">Not Load</option>
-						<option value="1">Load Locally</option>
-					<!--<option value="2">Load from CDN</option> -->
-				</field>
-
 			</fieldset>
 			<!-- LOGO-->
 			<fieldset  name="logo" type="upload_func" label="Logo">
@@ -112,25 +97,25 @@
 			</fieldset>
 			<!-- BOOTSWATCH STYLES SELECTOR -->
 			<fieldset name="presets" label="Styles">
-				<field name="styles" type="list" default="0" label="Estilos CSS" description="Free themes from bootswatch.com">
-	<option value="0">Default</option>
-	<option value="1">cerulean</option>
-	<option value="2">cosmo</option>
-	<option value="3">cyborg</option>
-	<option value="4">darkly</option>
-	<option value="5">flatly</option>
-	<option value="6">journal</option>
-	<option value="7">lumen</option>
-	<option value="8">paper</option>
-	<option value="9">readable</option>
-	<option value="10">sandstone</option>
-	<option value="11">simplex</option>
-	<option value="12">slate</option>
-	<option value="13">spacelab</option>
-	<option value="14">superhero</option>
-	<option value="15">united</option>
-	<option value="16">yeti</option>
-				</field>	
+				<field name="style" type="list" default="0" label="Estilos CSS" description="Free themes from bootswatch.com">
+					<option value="">Default</option>
+					<option value="cerulean">cerulean</option>
+					<option value="cosmo">cosmo</option>
+					<option value="cyborg">cyborg</option>
+					<option value="darkly">darkly</option>
+					<option value="flatly">flatly</option>
+					<option value="journal">journal</option>
+					<option value="lumen">lumen</option>
+					<option value="paper">paper</option>
+					<option value="readable">readable</option>
+					<option value="sandstone">sandstone</option>
+					<option value="simplex">simplex</option>
+					<option value="slate">slate</option>
+					<option value="spacelab">spacelab</option>
+					<option value="superhero">superhero</option>
+					<option value="united">united</option>
+					<option value="yeti">yeti</option>
+				</field>
 			</fieldset>
 		</fields>
 	</config>
