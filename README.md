@@ -19,7 +19,6 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
   <li>A Fullwidth position for your sliders!</li>
   <li>Sticky Footer by default!</li>
   <li>Hide Front Content option, from admin!</li>
-  <li>Load last version for Bootstrap and JQuery from admin!</li>
 </ul>
 <h4>Thanks to:</h4>
 Bootstrap<br>
