@@ -6,7 +6,7 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
 <h3>This version is BETA, not use in production sites, yet!</h3>
 <h4>Available for everybody in March!</h4>
 <ul>
-  <li>100% Bootstrap 3.3.2</li>
+  <li>100% Bootstrap 3.3.4</li>
   <li>HTML 5</li>
   <li>Modernizr</li>
   <li>Font Awesome</li>
