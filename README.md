@@ -24,6 +24,6 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
 <a href="http://blank.vc/" target="_blank">Blank Template</a><br>
 Thomas Park and <a href="https://bootswatch.com/" target="_blank">Bootswatch</a><br>
 <a href="http://phproberto.com" target="_blank">Roberto Segura</a> for minor tweaks<br>
-Waseem Sadiq for minor tweaks<br>
+<a href="http://bulletprooftemplates.com/" target="_blank">Waseem Sadiq</a> for minor tweaks<br>
 Jordi Sorts, for the idea ;)
 
