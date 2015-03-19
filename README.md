@@ -20,10 +20,10 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
   <li>Hide Front Content option, from admin!</li>
 </ul>
 <h4>Thanks to:</h4>
-Bootstrap<br>
-Blank Template<br>
+<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a><br>
+<a href="http://blank.vc/" target="_blank">Blank Template</a><br>
 Thomas Park and <a href="https://bootswatch.com/" target="_blank">Bootswatch</a><br>
-Roberto Segura for minor tweaks<br>
+<a href="http://phproberto.com" target="_blank">Roberto Segura</a> for minor tweaks<br>
 Waseem Sadiq for minor tweaks<br>
 Jordi Sorts, for the idea ;)
 
