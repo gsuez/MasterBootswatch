@@ -2,8 +2,7 @@
 <p>Joomla! Framework, based in Bootstrap 3.x 100% with Bootswatch styles.<br>
   Now, you can get the 17 styles bootswatch with just one click!<br>
 The same great features of Master Bootstrap, with the styles of Bootswatch! all improved and updated!</p>
-<p>No brand in code! Perfect for any project! Developed under GPL License, absolutely FREE!</p>
-<h3>This version is BETA, not use in production sites, yet!</h3>
+<p><strong>NO BRAND IN CODE! </strong>Perfect for any project! Developed under GPL License, absolutely FREE!</p>
 <h4>Available for everybody in March!</h4>
 <ul>
   <li>100% Bootstrap 3.3.4</li>
@@ -23,7 +22,7 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
 <h4>Thanks to:</h4>
 Bootstrap<br>
 Blank Template<br>
-Thomas Park and Bootswatch<br>
+Thomas Park and <a href="https://bootswatch.com/" target="_blank">Bootswatch</a><br>
 Roberto Segura for minor tweaks<br>
 Waseem Sadiq for minor tweaks<br>
 Jordi Sorts, for the idea ;)
