@@ -25,5 +25,4 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
 Thomas Park and <a href="https://bootswatch.com/" target="_blank">Bootswatch</a><br>
 <a href="http://phproberto.com" target="_blank">Roberto Segura</a> for minor tweaks<br>
 <a href="http://bulletprooftemplates.com/" target="_blank">Waseem Sadiq</a> for minor tweaks<br>
-Jordi Sorts, for the idea ;)
-
+<a href="http://www.websdefutbol.com/" target="_blank"></a>Jordi Sorts, for the idea ;)
