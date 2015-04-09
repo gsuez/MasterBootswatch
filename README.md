@@ -26,3 +26,6 @@ The same great features of Master Bootstrap, with the styles of Bootswatch! all 
 <a href="http://phproberto.com" target="_blank">Roberto Segura</a> for minor tweaks<br>
 <a href="http://bulletprooftemplates.com/" target="_blank">Waseem Sadiq</a> for minor tweaks<br>
 <a href="http://www.websdefutbol.com/" target="_blank">Jordi Sorts</a> for the idea ;)
+<h4>Support</h4>
+<a href="http://groups.google.com/group/master-bootstrap/subscribe" target="_blank">Google Group</a>
+
