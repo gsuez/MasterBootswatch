@@ -25,7 +25,6 @@
 	//$doc->addScript('templates/' . $this->template . '/js/modal.js');
 	// Add Stylesheets
 	$doc->addStyleSheet('templates/' . $this->template . '/css/icons.css');
-	$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 	// Disable mootools
 	//unset($doc->_scripts[JURI::root(true) . '/media/system/js/mootools-more.js']);
 	//unset($doc->_scripts[JURI::root(true) . '/media/system/js/mootools-core.js']);
@@ -38,6 +37,7 @@
 	} else {
 		$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
 	}
+    $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 	// Variables
 	$headdata = $doc->getHeadData();
 	$menu = $app->getMenu();
